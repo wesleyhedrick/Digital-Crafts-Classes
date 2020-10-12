@@ -1,4 +1,4 @@
-# Digital Crafts Teacher Notes
+# Digital Crafts Cohort 10/2020
 
 ## Table of Contents
 
