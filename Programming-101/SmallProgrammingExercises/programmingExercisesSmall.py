@@ -27,12 +27,14 @@ and {verb} {nounplural} {time}.'''
 
 print(content)
 
+
 #Day of the Week
 day = int(input('Give me a number between 0 and 6.\n'))
 
 dayArray = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
 print('You must be thinking of ' + dayArray[day])
+
 
 #Work or Sleep In?
 day = int(input('Give me a number between 0 and 6.\n'))
