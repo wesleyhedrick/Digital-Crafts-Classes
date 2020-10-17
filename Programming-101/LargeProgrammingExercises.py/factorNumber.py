@@ -1,6 +1,4 @@
-dividend = input('Give me a number, and I\'ll give you all it\'s factors.\n')
-dividend = int(dividend)
-
+dividend = int(input('Give me a number, and I\'ll give you all it\'s factors.\n'))
 divisor = 1
 halfwaypoint = dividend / 2 + 1
 
