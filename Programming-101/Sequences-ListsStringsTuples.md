@@ -20,6 +20,12 @@
     - **del** keyword 
     - **del** myList[3]
 
+- Combining Lists
+    - Concatenation = myList = [1,2,3] + [4,5]
+    - Extend = myList.extend([6,7])
+        - myCats = ['Pandora', 'Ariel']
+        - myList.extend(myCats)
+
 
 # Strings
 - You can access items in a string with indeces just like in lists
@@ -32,4 +38,8 @@
 
 # Nuggets 
 - Lists are mutable items
+- access the index of a list in a for-in loop by using enumerate().
+    - for number, things in enumerate(thingsList):
+        print(f'{number}: {things}')
+
 
