@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+        .prototile1 {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+
+        }
+
+        
+        .prototile1 .top {
+            flex: 1.3;
+            border-bottom: 1px solid black;
+            background: #7BCCBC;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .prototile1 .bottom {
+            flex: 1;
+            background: #FCFCFC;
+            border-radius: 0px 0px 10px 10px;
+            
+        }
+
+        .prototile2 {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid black;
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .left {
+            flex: 1;
+        }
+
+
+        [class*="middle"] {
+            border: 1px solid black;
+        }
+
+        .middle {
+            flex: 5;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .middletop {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .middletopleft, .middletopmiddle, .middletopright {
+            width: 30%;
+        }
+
+        .middletopmiddle {
+            background: #7FD0C0;
+        }
+
+        .middlemiddle {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: #FCFCFC;
+        }
+
+        .middlebottom {
+            flex: 1.5;
+            background: #0B0B0B;
+        }
+
+        .right {
+            flex: 1;
+        }
+
+        section {
+            width: 1000px;
+            height: 762px;
+            border: 5px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+
+        .row {
+            width: 100%;
+            overflow-x: scroll;
+            display: flex;
+        }
+
+
+    </style>
+</head>
+<body>
+        <section>
+        <div class="row row1">
+            <div class="prototile1">
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+            </div>
+            <div class="prototile2">
+                <div class="left"></div>
+                <div class="middle">
+                    <div class="middletop">
+                        <div class="middletopleft"></div>
+                        <div class="middletopmiddle"></div>
+                        <div class="middletopright"></div>
+                    </div>
+                    <div class="middlemiddle"></div>
+                    <div class="middlebottom"></div>
+                </div>
+                <div class="right"></div>
+            </div>
+            <div class="prototile1">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+            <div class="prototile2">
+                <div class="left"></div>
+                <div class="middle">
+                    <div class="middletop">
+                        <div class="middletopleft"></div>
+                        <div class="middletopmiddle"></div>
+                        <div class="middletopright"></div>
+                    </div>
+                    <div class="middlemiddle"></div>
+                    <div class="middlebottom"></div>
+                </div>
+                <div class="right"></div>
+            </div>
+            <div class="prototile2">
+                    <div class="left"></div>
+                    <div class="middle">
+                        <div class="middletop">
+                            <div class="middletopleft"></div>
+                            <div class="middletopmiddle"></div>
+                            <div class="middletopright"></div>
+                        </div>
+                        <div class="middlemiddle"></div>
+                        <div class="middlebottom"></div>
+                    </div>
+                    <div class="right"></div>
+                </div>
+                <div class="prototile1">
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                </div>
+        </div>
+        
+        <div class="row row2">
+            <div class="prototile1">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+            <div class="prototile2">
+                <div class="left"></div>
+                <div class="middle">
+                    <div class="middletop">
+                        <div class="middletopleft"></div>
+                        <div class="middletopmiddle"></div>
+                        <div class="middletopright"></div>
+                    </div>
+                    <div class="middlemiddle"></div>
+                    <div class="middlebottom"></div>
+                </div>
+                <div class="right"></div>
+            </div>
+            <div class="prototile1">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+            <div class="prototile2">
+                <div class="left"></div>
+                <div class="middle">
+                    <div class="middletop">
+                        <div class="middletopleft"></div>
+                        <div class="middletopmiddle"></div>
+                        <div class="middletopright"></div>
+                    </div>
+                    <div class="middlemiddle"></div>
+                    <div class="middlebottom"></div>
+                </div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="row row3">
+            <div class="prototile1">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+            <div class="prototile2">
+                <div class="left"></div>
+                <div class="middle">
+                    <div class="middletop">
+                        <div class="middletopleft"></div>
+                        <div class="middletopmiddle"></div>
+                        <div class="middletopright"></div>
+                    </div>
+                    <div class="middlemiddle"></div>
+                    <div class="middlebottom"></div>
+                </div>
+                <div class="right"></div>
+            </div>
+            <div class="prototile1">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+            <div class="prototile1">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+        </div>
+        <!-- <div class="row row4">
+            <div class="prototile2">
+                    <div class="left"></div>
+                    <div class="middle">
+                        <div class="middletop">
+                            <div class="middletopleft"></div>
+                            <div class="middletopmiddle"></div>
+                            <div class="middletopright"></div>
+                        </div>
+                        <div class="middlemiddle"></div>
+                        <div class="middlebottom"></div>
+                </div>
+                <div class="right"></div>
+            </div>
+            <div class="prototile1">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+            <div class="prototile1">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+            <div class="prototile2">
+                <div class="left"></div>
+                <div class="middle">
+                    <div class="middletop">
+                        <div class="middletopleft"></div>
+                        <div class="middletopmiddle"></div>
+                        <div class="middletopright"></div>
+                    </div>
+                    <div class="middlemiddle"></div>
+                    <div class="middlebottom"></div>
+            </div>
+            <div class="right"></div>
+            </div>
+        </div> -->
+
+    </section>
+</body>
+</html>

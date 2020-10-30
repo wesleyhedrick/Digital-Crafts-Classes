@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+        section {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .frame {
+            border-style: solid;
+            border-width: 5px;
+            border-image: linear-gradient(to right, red, blue) 1;
+            width: 758px;
+            height: 400px;
+            display: flex;
+            box-shadow:8px 7px 7px -5px gray;
+        }
+/* borders */
+        .pillar1-1,
+        .pillar1-2-1,
+        .pillar1-2-2, 
+        .pillar2-1,
+        .pillar2-2,
+        .pillar2-3,
+        .pillar2-4,
+        .pillar2-2, 
+        .pillar3-1, .pillar3-2, .pillar3-3, .pillar3-4,
+        .pillar3-2-1,
+        .pillar3-3-1,
+        .pillar4-1-1,
+        .pillar4-1-2,
+        .pillar4-2-1,
+        .pillar4-2-2,
+        .pillar4-3-1, 
+        .pillar5-1,
+        .pillar5-2,
+        .pillar5-3,
+        .pillar5-4,
+        .pillar5-5 {
+            border-bottom: 2px solid black;
+        }
+
+        .pillar1-1-1, 
+        .pillar1, 
+        .pillar2,
+        .pillar3,
+        .pillar4 {
+            border-right: 2px solid black;
+        }
+
+
+
+
+        .pillar {
+            height: 100%;
+            
+        }
+
+
+        .pillar1 {
+            flex: 1;
+            display: flex; 
+            flex-direction: column;
+
+        }
+        .pillar1-1 {
+            flex: 1.5;
+            display: flex;
+            
+        }
+
+        .pillar1-1-1, .pillar1-1-2 {
+            flex: 1;
+            height: 100%;
+            
+        }
+        
+        .pillar1-1-1 {
+            background: yellow;
+        }
+        .pillar1-2 {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pillar1-2-1 {
+            flex: 1;
+            
+            
+        }
+        .pillar1-2-2 {
+            flex: 1;
+            
+            background: red;
+            
+        }
+
+        .pillar1-2-3 {
+            flex: 1;
+            
+        }
+
+        .pillar2 {
+            flex: 1;
+            display: flex; 
+            flex-direction: column;
+        }
+        .pillar2-1, .pillar2-2, .pillar2-3, .pillar2-4 {
+            flex: 1;
+            
+        }
+
+        .pillar2-2 {
+            display: flex;
+            
+
+        }
+        [class*=pillar2-2-] {
+            flex: 1;
+        }
+
+        .pillar2-2-1 {
+            background: black;
+        }
+
+        .pillar2-3 {
+            background: yellow;
+        }
+        .pillar3 {
+            flex: 1.5;
+            display: flex;
+            flex-direction: column;
+
+        }
+        
+
+        .pillar3-1 {
+            flex: 1;
+            display: flex; 
+            flex-direction: column;
+
+        }
+        .pillar3-1-1, .pillar3-1-2 {
+            flex: 1;
+            background: yellow;
+        }
+
+        .pillar3-2 {
+            flex: 1;
+            display: flex; 
+            flex-direction: column;
+        }
+    
+        .pillar3-2-1, .pillar3-2-2 {
+            flex: 1;
+        }
+
+        .pillar3-2-1 {
+            display: flex;
+            
+
+        }
+
+        .pillar3-2-1-1, .pillar3-2-1-2 {
+            flex: 1;    
+            
+        }
+
+        .pillar3-3 {
+            flex: 1.5;
+            display: flex;
+            flex-direction: column;
+        }
+        .pillar3-3-1, .pillar3-3-2 {
+            flex: 1;
+
+        }
+
+        .pillar3-3-1 {
+            
+        }
+
+        .pillar3-3-1 {
+            background: blue; 
+        }
+        .pillar3-3-2 {
+            background: red;
+        }
+
+        .pillar4 {
+            flex: 1.5;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pillar4-1 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pillar4-1-1 {
+            flex: 0.7;
+            
+            background:blue;
+            
+
+        }
+        .pillar4-1-2 {
+            flex: 1; 
+            
+            background:red; 
+            
+
+        }
+
+        .pillar4-2 {
+            flex: 0.9;
+            display: flex;
+            flex-direction: column;
+        }
+        .pillar4-2-1 {
+            flex: 1;
+            
+
+        }
+
+        .pillar4-2-2 {
+            flex: 1;
+            
+            display: flex;
+        }
+        .pillar4-2-2-1, .pillar4-2-2-2 {
+            flex: 1;
+            
+        }
+
+        .pillar4-3 {
+            flex: 1;
+            display: flex; 
+            flex-direction: column;
+        }
+
+        .pillar4-3-1 {
+            background: yellow;
+            flex: 1.8;
+            
+
+        }
+
+        .pillar4-3-2 {
+            flex: 1;
+            display: flex;
+
+        }
+        .pillar4-3-2-1 {
+            flex: 1;
+            
+        }
+
+        .pillar4-3-2-2 {
+            flex: 1;
+            background: black;
+        }
+
+
+        .pillar5 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .pillar5-1 {
+            flex: 1;
+            display: flex;
+            
+        }
+
+        .pillar5-1-1 {
+            flex: 1;
+            background: yellow;
+            
+        }
+        .pillar5-1-2 {
+            flex: 1;
+            background: black;
+        }
+
+        .pillar5-2 {
+            flex: 1;
+            background: yellow;
+        }
+
+        .pillar5-3 {
+            flex: 1;
+            background: black;
+        }
+
+        .pillar5-4 {
+            flex: 1;
+        }
+
+        .pillar5-5 {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="frame">
+            <div class="pillar pillar1">
+                <div class="pillar1-1">
+                    <div class="pillar1-1-1"></div>
+                    <div class="pillar1-1-2"></div>
+                </div>
+                <div class="pillar1-2">
+                    <div class="pillar1-2-1"></div>
+                    <div class="pillar1-2-2"></div>
+                    <div class="pillar1-2-3"></div>
+                </div>
+            </div>
+            <div class="pillar pillar2">
+                <div class="pillar2-1"></div>
+                <div class="pillar2-2">
+                    <div class="pillar2-2-1"></div>
+                    <div class="pillar2-2-2"></div>
+                </div>
+                <div class="pillar2-3"></div>
+                <div class="pillar2-4"></div>
+            </div>
+            <div class="pillar pillar3">
+                <div class="pillar3-1">
+                    <div class="pillar3-1-1"></div>
+                    <div class="pillar3-1-2"></div>
+                </div>
+                <div class="pillar3-2">
+                    <div class="pillar3-2-1">
+                        <div class="pillar3-2-1-1"></div>
+                        <div class="pillar3-2-1-2"></div>
+                    </div>
+                    <div class="pillar3-2-2"></div>
+                </div>
+                <div class="pillar3-3">
+                    <div class="pillar3-3-1"></div>
+                    <div class="pillar3-3-2"></div>
+                </div>
+            </div>
+            <div class="pillar pillar4">
+                <div class="pillar4-1">
+                    <div class="pillar4-1-1"></div>
+                    <div class="pillar4-1-2"></div>
+                </div>
+                <div class="pillar4-2">
+                    <div class="pillar4-2-1"></div>
+                    <div class="pillar4-2-2">
+                        <div class="pillar4-2-2-1"></div>
+                        <div class="pillar4-2-2-2"></div>
+                    </div>
+                </div>
+                <div class="pillar4-3">
+                    <div class="pillar4-3-1"></div>
+                    <div class="pillar4-3-2">
+                        <div class="pillar4-3-2-1"></div>
+                        <div class="pillar4-3-2-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pillar pillar5">
+                <div class="pillar5-1">
+                    <div class="pillar5-1-1"></div>
+                    <div class="pillar5-1-2"></div>
+                </div>
+                <div class="pillar5-2"></div>
+                <div class="pillar5-3"></div>
+                <div class="pillar5-4"></div>
+                <div class="pillar5-5"></div>
+            </div>
+        </div>
+    </section>  
+</body>
+</html>

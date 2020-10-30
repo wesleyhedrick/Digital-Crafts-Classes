@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 275px;
+            width: 60%;
+            border-width: 5px;
+            border-style: solid;
+            border-image: linear-gradient(to right, #e7222e, #81c4ff ) 1;
+            display: flex;
+        }
+
+        .block {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fffdfe;
+            font-size: 1.5em; 
+        }
+
+        .block1 {
+            background: #81c4ff;
+            
+        }
+
+        .block2 {
+            background: #16588e;
+        }
+
+        .block3 {
+            background: #e7222e;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="block block1">1</div>
+        <div class="block block2">2</div>
+        <div class="block block3">3</div>
+    </div>
+</body>
+</html>

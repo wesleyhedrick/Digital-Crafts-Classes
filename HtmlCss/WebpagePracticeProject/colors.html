@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+    .color-palette {
+        display: flex;
+        flex-direction: column;
+        width: 834px;
+    }
+
+    .row1, .row2, .row3 {
+        display: flex; 
+        
+    }
+
+
+
+    [class*="tile"] {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2px;
+    }
+
+    .tile1 {
+        background: #0A0707;
+        color: white;
+    }
+
+    .tile2 {
+        background: #F9F8F8;
+        color: white;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="color-palette">
+        
+        <div class="row1">
+            <div class="tile1 0A0707">
+                #A2A2A2
+            </div>
+            <div class="tile2 F9F8F8">
+                #0A0A09
+            </div>
+            <div class="tile3 3A4042">
+                #D0D0D0
+            </div>
+            <div class="tile4 9C0308">
+                #686868
+            </div>
+            <div class="tile5 F22A63">
+                #5B3309
+            </div>
+            <div class="tile6 C2A9DB">
+                #D2C0B3
+            </div>
+            <div class="tile7 CD6B93">
+                #EABE08
+            </div>
+            <div class="tile8 D9F471">
+                #AC4D0A
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="tile9 1A110E">
+                    #1A110E
+            </div>
+            <div class="tile10 8C6035">
+                    #8C6035
+            </div>
+            <div class="tile11 705F4D">
+                    #705F4D
+            </div>
+            <div class="tile12 9A8769">
+                    #9A8769
+            </div>
+            <div class="tile13 5D3417">
+                    #5D3417
+            </div>
+            <div class="tile14 B7A085">
+                    #B7A085
+            </div>
+        </div>
+        <div class="row3">
+        
+            <div class="tile16 99999A">
+                #7BCCBC
+            </div>
+            <div class="tile17 363B39">
+                #1C835D
+            </div>
+            <div class="tile18 FAF9F9">
+                #505850
+            </div>
+            <div class="tile19 606060">
+                #7FD0C0
+            </div>
+            <div class="tile20 C1BBB7">
+                #0B0B0B
+            </div>
+            <div class="tile21 B6442B">
+                    #FCFCFC
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+
+<script>
+    const tiles = document.querySelectorAll('[class*=tile]');
+    tiles.forEach((tile) => {
+        console.log(tile.textContent);
+        tile.style.background = tile.textContent
+        tile.style.color = 'white';
+    })
+
+</script>
+</html>
