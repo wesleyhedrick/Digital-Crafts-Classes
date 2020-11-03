@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+       * {
+           box-sizing: border-box;
+       }
+       body {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           width: 100vw;
+           height: 100vh;
+           
+       }
+
+       .container {
+            width: 70%;
+            border: 1px solid black;
+            
+       }
+
+        header {
+            width: 100%;
+            background: lightblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            color: white;
+            
+        }
+
+        ul { 
+            display: flex; 
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li {
+            margin-right: 1em;
+        }
+
+
+
+        main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid blue;
+            padding-top: 1em;
+            padding-bottom: 1em;
+
+        }
+
+        .headlineBoxh2, .headlineBoxh3 {
+            width: 80%;
+        }
+
+        .headlineBoxh2 {
+            background: gray;
+
+        }
+
+        .data {
+            display: flex;
+            justify-content: flex-start;
+            background: orange;
+            padding: 0px;
+            padding-left: 0.5em;
+            
+        }
+
+        .data>p {
+            margin: 0px;
+            margin-right: 0.5em;
+        }
+
+        h3 {
+            color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+</body>
+</html>
+<script>
+        lorem = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet debitis ratione reprehenderit temporibus laudantium, pariatur totam excepturi quo officia enim magni molestias ullam architecto dolorum placeat id reiciendis illo veniam!'
+        
+        buildAPage();
+        
+        function buildAPage(){
+            console.log('Working')
+            buildAHeader();
+            buildABody()
+        }
+        
+        function buildAHeader() {
+            let container = document.querySelector('.container');
+            let header = document.createElement('header');
+            let heading = document.createElement('h1');
+            heading.innerHTML = 'HighOnCoding';
+            header.append(heading)
+            header.append(buildAnUnorderedList());
+            container.append(header);
+        }
+        
+        function buildAnUnorderedList() {
+            container = document.querySelector('.container');
+            ul = document.createElement('ul');  
+            ['Home', 'Categories', 'About'].forEach((item) => {
+                li = document.createElement('li');
+                a = document.createElement('a');
+                a.setAttribute('href', '#');
+                a.innerHTML = item;
+                li.append(a); 
+                ul.append(li); 
+            })
+            return ul;  
+        }
+        
+        function buildABody(){
+            let container = document.querySelector('.container');
+            buildAMain(container);
+            
+        }
+        
+        function buildAMain(container){
+            
+            let main = document.createElement('main');
+            main.append(buildAHeadline('h2', 'Curse of the Current Reviews'));
+            main.append(buildAHeadline('h3', 'Hello WatchKit'));
+            main.append(buildAHeadline('h3', 'Introduction to Swift'));
+            container.append(main)
+        }
+        
+        function buildAHeadline (headingLevel, headlineText) {
+            let headlineBox = document.createElement('div');
+            headlineBox.setAttribute('class', `headlineBox${headingLevel}`);
+            let h = document.createElement(headingLevel);
+            h.innerHTML = headlineText;
+            let p = document.createElement('p');
+            p.innerHTML = lorem;
+            headlineBox.append(h);
+            headlineBox.append(p);
+            headlineBox.append(buildData());
+            return headlineBox;
+        }
+
+
+        function buildData() {
+            div = document.createElement('div');
+            div.setAttribute('class', 'data');
+            comments = document.createElement('p');
+            likes = document.createElement('p');
+            comments.innerHTML = `${random()} comments`;
+            likes.innerHTML = `${random()} likes`;
+            div.append(comments)
+            div.append(likes)
+        
+            return div
+        }
+        
+        function random() {
+            return Math.floor(Math.random()*100)
+        }
+        </script>
