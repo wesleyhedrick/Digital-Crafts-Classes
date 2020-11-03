@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw; 
+
+    }
+    .board {
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+
+    .space {
+        border: 3px solid black;    
+        width: 50px;
+        height: 50px;   
+    }
+
+    .first-space {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    </style>
+</head>
+<body>
+    <div class="board">
+        <div class="space first-space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+    </div>
+</body>
+</html>

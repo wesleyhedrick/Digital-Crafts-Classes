@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw; 
+        height: 100vh;
+        border: 2px solid black;
+        margin: 0;
+        padding: 0;
+
+    }
+    .board {
+        display: grid;
+        grid-template-columns: repeat(3, 50px);
+        grid-auto-rows: 50px;
+        width: 60%;
+
+
+        
+    }
+
+    .space {
+        border: 3px solid black;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    
+    </style>
+</head>
+<body>
+    <div class="board">
+        <div class="space space1">1</div>
+        <div class="space space2">2</div>
+        <div class="space space3">3</div>
+        <div class="space space4">4</div>
+        <div class="space space5">5</div>
+        <div class="space space6">6</div>
+        <div class="space space7">7</div>
+        <div class="space space8">8</div>
+        <div class="space space9">9</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!-- 1. Write a program that will declare a variable named "value". 
+    - Have an if, if else, else statement that compares that value.
+2. using ternary.
+    - compare if one number is greater than another. 
+    - set the value of a variable named 'result' to 'higher' if the first number is higher and lower if the first number is lower.
+3. Using switch.
+    - set a variable named = 'temp' and give it a value between -20 & 110.
+    - Have cases for sub 0, 30, 50, 75, 80, 90, and above.
+    - Have a hex color for each level going from blue to red.
+    - print out the color that represents the range. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .thermometer {
+            display: flex;
+            flex-direction: column;
+            height: 40px;
+            width: 30%;
+         }
+
+        .thermodisplay {
+            flex: 1;
+            width: 100%;
+            background-image: linear-gradient(to right, #1d7d8e, #FD1D1D);
+
+        }
+
+        .thermogrid {
+            flex: 1;
+            border: 1px solid black;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr)
+        }
+
+        .temp-colors {
+            border: 1px solid black;
+            display: flex;
+            justi
+            width: 3px;
+            heigh
+            width: 3px;
+            height: 100%;
+            background: black;
+            margin-left: 7.5em;
+            transition: 0.5s;
+        }
+        marker
+    </style>
+</head>
+<body>
+    <div class="thermometer">
+        <div class="thermodisplay"></div>
+        <div class="thermogrid">
+            <div class="temp-colors">
+                <div class="marker"></div>
+            </div>
+            <div class="temp-colors"></div>
+            <div class="temp-colors"></div>
+            <div class="temp-colors"></div>
+            <div class="temp-colors"></div>
+            <div class="temp-colors"></div>
+            <div class="temp-colors"></div>
+        </div>
+    </div>
+</body>
+<script>
+function value(myValue) {
+    if (value > 100) {
+        console.log('You\'re great.')
+    } else if (value > 50) {
+        console.log('You\'re mediocre.')
+    } else {
+        console.log('You\'re a loser')
+    }
+}
+
+value(110);
+
+let num = 35;
+
+num > 20 ? console.log(`That's a big number.`) : console.log(`That's a small number.`);
+
+function showTemp (temp) {
+    
+    switch(temp){
+        case < 0:
+        
+            break;
+        case < 30:
+
+            break;
+
+        case < 50:
+
+            break;
+        case < 75:
+
+            break;
+        case < 80:
+
+            break;
+        case < 90:
+
+            break;
+        case < 0:
+
+            break;
+    }
+}
+
+
+</script>
+</html>
